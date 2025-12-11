@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: smooth font + background */
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+
+@keyframes spin-smooth {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin-logo {
+  animation: spin-smooth 6s linear infinite;
+}
